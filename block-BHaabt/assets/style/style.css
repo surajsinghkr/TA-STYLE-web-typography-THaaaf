@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-- Header --*/
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px auto;
+}
+.header h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #2D2640;
+    margin: 12px 0;
+}
+
+.header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #6E6B74;
+    margin-left: 16px;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.plan{
+    border: 1px solid #6E6B74;
+    border-radius: 5px;
+}
+
+/*-- section-1 --*/
+
+.section-1{
+    background-color: #2D2640;
+    padding: 12px 0;
+}
+
+.content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 560px;
+    position: relative;
+}
+
+.content-wrapper .article{
+    width: 45%;
+    padding: 16px 0;
+}
+
+.content-wrapper .article .line{
+    border-bottom: 2px solid #B6B5BA;
+    width: 40%;
+    margin: 24px 0;
+}
+
+.content-wrapper .article h2{
+    color: white;
+    font-size: 56px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 32px 0;
+}
+
+.content-wrapper .article p{
+    font-size: 20px;
+    color: white;
+    line-height: 1;
+    word-spacing:0pt;
+    margin: 32px 0;
+}
+
+.content-wrapper .article .button{
+    padding: 12px;
+    border: 2px white solid;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.content-wrapper .article .button a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.content-wrapper .image-container img{
+    height: 680px;
+}
+
+.content-wrapper .image-container{
+    position: absolute;
+    top: 48px;
+    right: 0px;
+}
+
+/*--  Section-2 --*/
+
+.section-2{
+    margin-top: 224px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-2 .image-container img{
+    width: 520px;
+}
+
+.section-2 .article{
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-2 .article h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #2D2640;
+    margin: 24px 0;
+}
+
+.section-2 .article p{
+    font-size: 16px;
+    color: #949298;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.section-2 .article .button{
+    padding: 10px;
+    border: #6E6B74 1px solid;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+    margin: 24px 0;
+}
+
+.section-2 .article .button a{
+    color: #6E6B74;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* -- Section-3 --*/
+
+.section-3{
+    margin-top: 40px;
+}
+
+.section-3 .line{
+    border-bottom: solid 2px #949298;
+    width: 12%;
+}
+.section-3 h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #2D2640;
+    margin: 24px 0;
+}
+
+.section-3 .service-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-3 .service-container .article{
+    width: 30%;
+}
+
+.section-3 .service-container .article .icon-container{
+    padding: 12px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    background-color: #8AB4F0;
+    margin: 12px 0;
+}
+
+.section-3 .service-container .article h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #2D2640;
+    margin: 12px 0;
+    text-transform: capitalize;
+}
+
+.section-3 .service-container .article p{
+    color: #6E6B74;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 12px 0;
+}
+
+.section-3 .footer{
+    background-color: #2D2640;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4%;
+    margin: 24px 0;
+}
+
+.section-3 .footer h2{
+    color: white;
+    width: 30%;
+    line-height: 1.2;
+}
+
+.section-3 .footer .button{
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.section-3 .footer .button a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+/* -- Section-4 -- */
+
+.section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px auto;
+}
+
+.section-4 .sec-4-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #9D9D9D solid 1px;
+    padding-bottom: 8px;
+}
+
+.section-4 .sec-4-container h2{
+    font-size: 32px;
+    color: #2D2640;
+    font-weight: 600;
+}
+.section-4 .sec-4-container .navbar .fab{
+    font-size: 16px;
+    padding: 8px;
+    background-color: #6E6B74;
+    width: 24px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    margin-left: 24px;
+}
+
+.section-4 .sec-4-navbar{
+    margin: 24px 0;
+}
+
+.section-4 .sec-4-navbar a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6E6B74;
+    margin-left: 24px;
+}
+
+/* -- Footer --*/
+
+.main-footer{
+    background-color: #2D2640;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-footer small{
+    color: #9D9D9D;
+    font-weight: 600;
+}
+
+/* -- adding font family --*/
+
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+.heading{
+    font-family: 'DM Serif Display', serif;
+}
